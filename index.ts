@@ -65,3 +65,36 @@ let speech1: Speech = {
 
 console.log(speech1.hiIAm('saurav')); //Hi! saurav
 console.log(speech1.goodByy('saurav')); //Goodbyy! saurav
+
+function findRadius (radius:number, name?:number | string) : string {
+    console.log(name);
+    return `The radius of the circle is `+ Math.PI*radius*radius;
+} //Writen a function for finding area of circle.
+
+console.log(findRadius(4, 'saurav'));
+
+const findRadiusAnotherFun =  (radius: number):string => `The radius of the circle is `+ Math.PI*radius*radius;
+console.log(findRadiusAnotherFun(6));
+
+const logMessage = (msg: string): void => {
+    console.log('This is the message: ' + msg);
+  };
+  
+  logMessage('TypeScript is superb'); // This is the message: TypeScript is superb
+
+  type strOrNum = string | number;
+
+  type projectObject = {
+    name: string,
+    id: strOrNum
+  };
+
+  const project1: projectObject = {
+    name: 'project1',
+    id: '3'
+  };
+
+  const project2: projectObject = {
+    name: 'project2',
+    id: 4
+  }

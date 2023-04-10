@@ -41,3 +41,22 @@ let speech1 = {
 };
 console.log(speech1.hiIAm('saurav')); //Hi! saurav
 console.log(speech1.goodByy('saurav')); //Goodbyy! saurav
+function findRadius(radius, name) {
+    console.log(name);
+    return `The radius of the circle is ` + Math.PI * radius * radius;
+} //Writen a function for finding area of circle.
+console.log(findRadius(4, 'saurav'));
+const findRadiusAnotherFun = (radius) => `The radius of the circle is ` + Math.PI * radius * radius;
+console.log(findRadiusAnotherFun(6));
+const logMessage = (msg) => {
+    console.log('This is the message: ' + msg);
+};
+logMessage('TypeScript is superb'); // This is the message: TypeScript is superb
+const project1 = {
+    name: 'project1',
+    id: '3'
+};
+const project2 = {
+    name: 'project2',
+    id: 4
+};
